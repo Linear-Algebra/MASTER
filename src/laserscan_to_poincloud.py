@@ -14,7 +14,7 @@ class Laser2PC():
 
         self.pub = rospy.Publisher("/own/true/sonar_PC2",PointCloud2, queue_size=1)
         self.pub1 = rospy.Publisher("/own/simulated/sonar_PC2",PointCloud2, queue_size=1)
-        self.pub2 = rospy.Publisher("/own/simulated//dynamic/sonar_PC2",PointCloud2, queue_size=1)
+        self.pub2 = rospy.Publisher("/own/simulated/dynamic/sonar_PC2",PointCloud2, queue_size=1)
 
         self.sub = rospy.Subscriber("/desistek_saga/sonar",LaserScan, self.callback)
         self.sub1 = rospy.Subscriber("/own/simulated/sonar_LS",LaserScan, self.callback1)
